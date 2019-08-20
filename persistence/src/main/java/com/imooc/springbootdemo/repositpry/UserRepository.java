@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class UserRepository {
 
     //内存形的存储方式
-    private final static ConcurrentMap<Integer, User> repository = new ConcurrentHashMap<>();
+    private final static ConcurrentMap<Integer, User> repository = new ConcurrentHashMap<Integer, User>();
 
     //自增参数
     private final static AtomicInteger idGenarator = new AtomicInteger();
